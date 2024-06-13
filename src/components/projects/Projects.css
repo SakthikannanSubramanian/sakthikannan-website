@@ -1,0 +1,32 @@
+.project-item {
+    margin-bottom: 20px;
+  }
+  
+  .project-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .chevron {
+    margin-left: 10px;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+    color: black; /* Set chevron color to black */
+  }
+  
+  .chevron.open {
+    transform: rotate(90deg); /* Rotate 90 degrees when open */
+  }
+  
+  .chevron.closed {
+    transform: rotate(0deg); /* No rotation when closed */
+  }
+  
+  .project-details {
+    /* Style the project details section */
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,87 @@
+/* General Styles */
+.header {
+  background: linear-gradient(135deg, #4a90e2, #002f6c); /* Gradient background with shades of blue */
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: #0056b3 3px solid; /* Darker blue for border */
+}
+.sub-text {
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow content to wrap for smaller screens */
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 50px;
+  transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for resizing */
+}
+
+.header-text {
+  text-align: center;
+  /* flex-grow: 1; Allow text to take up available space */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3em;
+  font-family: 'Lobster', cursive; /* Decorative font for the header */
+}
+
+.header p {
+  font-size: 1.2em;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .header-content {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .profile-pic {
+    width: 120px; /* Slightly smaller image for tablets */
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  .header h1 {
+    font-size: 2.5em; /* Slightly smaller text for tablets */
+  }
+
+  .header p {
+    font-size: 1.1em;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .profile-pic {
+    width: 100px; /* Smaller image for mobile */
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .header h1 {
+    font-size: 2em; /* Smaller text for mobile */
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+}

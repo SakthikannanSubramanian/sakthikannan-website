@@ -1,0 +1,32 @@
+
+
+.category-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+  
+.chevron {
+margin-left: 10px;
+transition: transform 0.3s ease;
+}
+
+.chevron.open {
+transform: rotate(90deg);
+}
+
+.chevron.closed {
+transform: rotate(0deg);
+}
+
+.skills-list {
+/* ... your existing styles ... */
+transition: max-height 0.3s ease-in-out; /* Add transition for smooth animation */
+overflow: hidden; /* Hide content that overflows */
+max-height: 0; /* Initially set max-height to 0 */
+padding: 0;
+}
+
+.skills-list.open {
+max-height: 600px; /* Set max-height to a suitable value when open */
+}
